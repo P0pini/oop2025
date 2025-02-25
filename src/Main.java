@@ -6,6 +6,8 @@ public class Main {
         p1.y = 750;
         System.out.println("Twój x to: " + p1.x + " a Twój y to: " + p1.y);
         System.out.println(p1);
+        p1.translate(10,20);
+        System.out.println(p1);
         System.out.println(p1.toSVG());
     }
 }
