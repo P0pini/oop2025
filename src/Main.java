@@ -8,6 +8,8 @@ public class Main {
         System.out.println(p1);
         p1.translate(10,20);
         System.out.println(p1);
+        Point p2=p1.translated(-10,-20);
+        System.out.println(p2);
         System.out.println(p1.toSVG());
     }
 }

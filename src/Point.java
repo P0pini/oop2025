@@ -13,5 +13,11 @@ public class Point {
         x+=dx;
         y+=dy;
     }
+    public Point translated(double dx, double dy){
+        Point trPoint = new Point();
+        trPoint.x= x+dx;
+        trPoint.y= y+dy;
+        return trPoint;
+    }
 
 }
