@@ -1,6 +1,6 @@
 public class Point {
-    private double x;
-    private double y;
+    private Double x;
+    private Double y;
 
     @Override
     public String toString() {
@@ -8,6 +8,11 @@ public class Point {
                 "\t\t"+"x=" + x +",\n"+
                 "\t\t"+"y=" + y +"\n"+
                 '}';
+    }
+
+    public Point(Point toCopy){
+        this.x=toCopy.x;
+        this.y=toCopy.y;
     }
 
     public String toSVG(){
