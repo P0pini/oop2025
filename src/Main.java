@@ -1,3 +1,6 @@
+import java.security.cert.PolicyNode;
+import java.util.ArrayList;
+
 public class Main {
     public static void main(String[] args) {
         System.out.println();
@@ -22,8 +25,12 @@ public class Main {
         p2.setX(15);
         p2.setY(8);
 
-
-
+        ArrayList<Point> points = new ArrayList<Point>();
+        points.add(new Point(90,80));
+        points.add(new Point(1,1));
+        points.add(new Point(100,100));
+        points.add(new Point(55,55));
+        Polygon poly=new Polygon(points);
 
 
 
